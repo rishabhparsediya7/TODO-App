@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="text">
+                <h2 class="text-center">TODO App</h2>
+            </div>
+        </div>
+        <label id="taskadded" class="text-success" style="display: none;">
+        </label>
+        <div class="row">
+            <div class="col-md-12">
+                <form class="form-horizontal" action="/index.js">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="todothings" placeholder="Add things to do..">
+                            </div>
+                            <div class="col-md-2">
+                                <button type="button" class="btn btn-success float-left add" onclick="addData()"><i class="fa fa-plus" aria-hidden="true"></i> Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="container" id="ws">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="list-group" id="items">
+                        <!--   <li class="list-group-item">1 <button type="button" class="btn btn-danger float-right">Delete</button></li>
+                        <li class="list-group-item">1 <button type="button" class="btn btn-danger float-right">Delete</button></li>
+                        <li class="list-group-item">1 <button type="button" class="btn btn-danger float-right">Delete</button></li>-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
