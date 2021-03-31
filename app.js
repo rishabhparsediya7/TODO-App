@@ -14,7 +14,7 @@ function addData() {
     li.appendChild(deleteBtn);
     ul.appendChild(li);
 
-    document.getElementById("taskadded").innerHTML = "Text edited successfully";
+    document.getElementById("taskadded").innerHTML = "Task added successfully";
 
     document.getElementById("taskadded")
         .style.display = "block";
